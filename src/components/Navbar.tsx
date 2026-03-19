@@ -17,23 +17,9 @@ export default function Navbar() {
       <div className="w-full px-6 md:px-12 lg:px-20 h-14 flex items-center justify-between">
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2">
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            className="text-accent"
-          >
-            <path
-              d="M12 2L2 9l10 13L22 9 12 2z"
-              fill="currentColor"
-              opacity="0.9"
-            />
-            <path
-              d="M12 2L2 9h20L12 2z"
-              fill="currentColor"
-              opacity="0.6"
-            />
+          <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.58332 8.29166L2.70832 5.09722L3.37499 4H12.6667L10.7917 7.23611H5.20832L4.58332 8.29166Z" fill="white"/>
+            <path d="M13.25 3.01389L15 0H0.638889L0 1.11111L1.86111 4.25L2.52778 3.01389H13.25Z" fill="white"/>
           </svg>
           <span className="text-white font-medium text-sm tracking-wide">
             Toseina
@@ -56,7 +42,7 @@ export default function Navbar() {
         {/* CTA button */}
         <a
           href="#contact"
-          className="hidden sm:inline-flex rounded-full bg-accent text-black px-5 py-1.5 text-xs font-medium hover:bg-accent-dark transition-colors duration-300 tracking-wide"
+          className="hidden sm:inline-flex rounded-full bg-accent text-black px-5 py-1.5 text-xs font-medium hover:bg-accent-dark transition-all duration-300 tracking-wide hover:shadow-[0_0_20px_rgba(0,229,160,0.4)]"
         >
           Get in touch
         </a>

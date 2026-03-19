@@ -25,7 +25,7 @@ export default function ProjectsSection() {
       <AnimateOnScroll direction="right">
         <div className="flex flex-col items-center md:items-end mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white tracking-tight">
-            Recent <span className="font-medium">Projects</span>
+            Recent <span className="font-medium text-gradient">Projects</span>
           </h2>
           <p className="text-gray-400 text-sm mt-4 max-w-lg text-center md:text-right leading-relaxed font-light tracking-wide">
             A curated showcase of recent work defined by refined standards and

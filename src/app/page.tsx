@@ -11,7 +11,7 @@ export default function Home() {
       <div className="relative">
         {/* Full-page background image */}
         <div
-          className="fixed inset-0 w-full h-full pointer-events-none z-0"
+          className="absolute inset-0 w-full h-full pointer-events-none z-0"
           style={{
             backgroundImage: "url(/bg.jpg)",
             backgroundSize: "cover",
@@ -21,10 +21,10 @@ export default function Home() {
         />
         {/* Gradient overlay */}
         <div
-          className="fixed inset-0 w-full h-full pointer-events-none z-[1]"
+          className="absolute inset-0 w-full h-full pointer-events-none z-[1]"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.5) 30%, rgba(10,10,10,0.85) 60%, rgba(10,10,10,1) 80%)",
+              "linear-gradient(to bottom, rgba(10,10,10,0.2) 0%, rgba(10,10,10,0.4) 20%, rgba(10,10,10,0.6) 40%, rgba(10,10,10,0.75) 60%, rgba(10,10,10,0.85) 80%, rgba(10,10,10,0.95) 100%)",
           }}
         />
         <main className="relative z-10">
