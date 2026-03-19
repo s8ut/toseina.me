@@ -5,9 +5,9 @@ interface SkillCardProps {
 
 export default function SkillCard({ value, label }: SkillCardProps) {
   return (
-    <div className="glass-card border-l-2 border-l-accent rounded-xl px-4 py-3.5 cursor-default">
-      <p className="text-accent font-medium text-base leading-tight">{value}</p>
-      <p className="text-gray-400 text-xs mt-0.5 font-light tracking-wide">{label}</p>
+    <div className="glass-card w-[155px] h-[155px] flex flex-col items-start justify-center px-5 cursor-default" style={{ borderRadius: 30 }}>
+      <p className="text-gradient font-semibold text-2xl leading-tight">{value}</p>
+      <p className="text-gray-400 text-xs mt-1 font-light">{label}</p>
     </div>
   );
 }

@@ -52,7 +52,7 @@ export default function HeroSection() {
           }}
         >
           <div className="flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-4 py-1.5">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-accent animate-pulse shadow-[0_0_8px_rgba(0,229,160,0.6)]" />
             <span className="text-xs text-gray-300 tracking-wide">Available for hire</span>
           </div>
           <div className="rounded-full bg-white/5 border border-white/10 px-4 py-1.5">
@@ -73,7 +73,7 @@ export default function HeroSection() {
         >
           Design defined by
           <br />
-          <span className="font-medium">precision</span> and <span className="font-medium">quality</span>.
+          <span className="font-medium text-gradient">precision</span> and <span className="font-medium text-gradient">quality</span>.
         </h1>
 
         {/* Subtitle */}

@@ -41,7 +41,7 @@ export default function ContactSection() {
       <AnimateOnScroll direction="up">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white tracking-tight">
-            Get in <span className="font-medium">Touch</span>
+            Get in <span className="font-medium text-gradient">Touch</span>
           </h2>
           <p className="text-gray-400 text-sm mt-4 max-w-md mx-auto leading-relaxed font-light tracking-wide">
             Ready to bring your vision to life? Reach out through any of these
@@ -58,7 +58,7 @@ export default function ContactSection() {
             rel="noopener noreferrer"
             className="glass-card group flex flex-col items-center gap-4 p-8 rounded-2xl"
           >
-            <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 group-hover:text-accent group-hover:border-accent/30 transition-all duration-300">
+            <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 group-hover:text-accent group-hover:border-accent/30 group-hover:icon-glow transition-all duration-300">
               <DiscordIcon />
             </div>
             <div className="text-center">
@@ -75,7 +75,7 @@ export default function ContactSection() {
             rel="noopener noreferrer"
             className="glass-card group flex flex-col items-center gap-4 p-8 rounded-2xl"
           >
-            <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 group-hover:text-accent group-hover:border-accent/30 transition-all duration-300">
+            <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 group-hover:text-accent group-hover:border-accent/30 group-hover:icon-glow transition-all duration-300">
               <InstagramIcon />
             </div>
             <div className="text-center">
@@ -92,7 +92,7 @@ export default function ContactSection() {
             rel="noopener noreferrer"
             className="glass-card group flex flex-col items-center gap-4 p-8 rounded-2xl"
           >
-            <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 group-hover:text-accent group-hover:border-accent/30 transition-all duration-300">
+            <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 group-hover:text-accent group-hover:border-accent/30 group-hover:icon-glow transition-all duration-300">
               <BehanceIcon />
             </div>
             <div className="text-center">
