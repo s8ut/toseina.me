@@ -47,7 +47,7 @@ export default function ProjectsSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, i) => (
           <AnimateOnScroll key={project.title} delay={i * 120} direction="up">
-            <div className="card-hover group relative rounded-2xl overflow-hidden border border-white/5 bg-surface hover:border-accent/20">
+            <div className="glass-card group relative rounded-2xl overflow-hidden">
               {/* Placeholder image area */}
               <div
                 className={`aspect-[4/3] bg-gradient-to-br ${project.gradient} flex items-center justify-center`}
