@@ -10,12 +10,10 @@ export default function Home() {
       <Navbar />
       <div className="relative">
         {/* Full-page background image */}
-        <div
-          className="bg-page absolute inset-0 w-full h-full pointer-events-none z-0"
-          style={{
-            backgroundImage: "url(/bg.jpg)",
-            backgroundRepeat: "no-repeat",
-          }}
+        <img
+          src="/bg.jpg"
+          alt=""
+          className="absolute inset-0 w-full h-full pointer-events-none z-0 object-cover object-center md:object-top"
         />
         {/* Gradient overlay */}
         <div
