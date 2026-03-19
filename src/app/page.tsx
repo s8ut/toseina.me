@@ -11,11 +11,9 @@ export default function Home() {
       <div className="relative">
         {/* Full-page background image */}
         <div
-          className="absolute inset-0 w-full h-full pointer-events-none z-0"
+          className="bg-page absolute inset-0 w-full h-full pointer-events-none z-0"
           style={{
             backgroundImage: "url(/bg.jpg)",
-            backgroundSize: "cover",
-            backgroundPosition: "top center",
             backgroundRepeat: "no-repeat",
           }}
         />
