@@ -56,7 +56,7 @@ export default function ContactSection() {
             href="https://discord.com/users/s8ut"
             target="_blank"
             rel="noopener noreferrer"
-            className="card-hover group flex flex-col items-center gap-4 p-8 rounded-2xl bg-surface/80 border border-white/5 hover:border-accent/20 backdrop-blur-sm"
+            className="glass-card group flex flex-col items-center gap-4 p-8 rounded-2xl"
           >
             <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 group-hover:text-accent group-hover:border-accent/30 transition-all duration-300">
               <DiscordIcon />
@@ -73,7 +73,7 @@ export default function ContactSection() {
             href="https://instagram.com/r7zvan"
             target="_blank"
             rel="noopener noreferrer"
-            className="card-hover group flex flex-col items-center gap-4 p-8 rounded-2xl bg-surface/80 border border-white/5 hover:border-accent/20 backdrop-blur-sm"
+            className="glass-card group flex flex-col items-center gap-4 p-8 rounded-2xl"
           >
             <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 group-hover:text-accent group-hover:border-accent/30 transition-all duration-300">
               <InstagramIcon />
@@ -90,7 +90,7 @@ export default function ContactSection() {
             href="https://behance.net/toseina"
             target="_blank"
             rel="noopener noreferrer"
-            className="card-hover group flex flex-col items-center gap-4 p-8 rounded-2xl bg-surface/80 border border-white/5 hover:border-accent/20 backdrop-blur-sm"
+            className="glass-card group flex flex-col items-center gap-4 p-8 rounded-2xl"
           >
             <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 group-hover:text-accent group-hover:border-accent/30 transition-all duration-300">
               <BehanceIcon />
