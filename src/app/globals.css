@@ -37,14 +37,7 @@ body {
 /* Responsive background image */
 .bg-page {
   background-size: cover;
-  background-position: center center;
-}
-
-@media (max-width: 768px) {
-  .bg-page {
-    background-size: contain;
-    background-position: top center;
-  }
+  background-position: top center;
 }
 
 /* Gradient text effect for accent words */
