@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 function InstagramIcon() {
   return (
     <svg
@@ -26,21 +30,33 @@ function DiscordIcon() {
 }
 
 export default function HeroSection() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setVisible(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section
       id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center pt-14"
     >
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-6">
+      <div className="relative z-10 flex flex-col items-center text-center px-6 w-full max-w-4xl">
         {/* Badges */}
-        <div className="flex flex-wrap justify-center gap-3 mb-8">
+        <div
+          className="flex flex-wrap justify-center gap-3 mb-8 transition-all duration-1000 ease-out"
+          style={{
+            opacity: visible ? 1 : 0,
+            transform: visible ? "translateY(0)" : "translateY(20px)",
+          }}
+        >
           <div className="flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-4 py-1.5">
-            <span className="w-2 h-2 rounded-full bg-accent" />
-            <span className="text-xs text-gray-300">Available for hire</span>
+            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+            <span className="text-xs text-gray-300 tracking-wide">Available for hire</span>
           </div>
           <div className="rounded-full bg-white/5 border border-white/10 px-4 py-1.5">
-            <span className="text-xs">
+            <span className="text-xs tracking-wide">
               <span className="text-accent font-medium">50+</span>{" "}
               <span className="text-gray-300">Happy Clients</span>
             </span>
@@ -48,30 +64,52 @@ export default function HeroSection() {
         </div>
 
         {/* Heading */}
-        <h1 className="font-[family-name:var(--font-playfair-display)] text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white max-w-xl leading-tight">
+        <h1
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white leading-[1.1] tracking-tight transition-all duration-1000 delay-200 ease-out"
+          style={{
+            opacity: visible ? 1 : 0,
+            transform: visible ? "translateY(0)" : "translateY(30px)",
+          }}
+        >
           Design defined by
           <br />
-          precision and quality.
+          <span className="font-medium">precision</span> and <span className="font-medium">quality</span>.
         </h1>
 
         {/* Subtitle */}
-        <p className="text-gray-400 text-sm md:text-base mt-5 max-w-md leading-relaxed">
+        <p
+          className="text-gray-400 text-sm md:text-base mt-6 max-w-md leading-relaxed tracking-wide font-light transition-all duration-1000 delay-400 ease-out"
+          style={{
+            opacity: visible ? 1 : 0,
+            transform: visible ? "translateY(0)" : "translateY(20px)",
+          }}
+        >
           Superior design rooted in meticulous precision, harmony, and elevated
           standards.
         </p>
 
         {/* Social icons */}
-        <div className="flex gap-4 mt-6">
+        <div
+          className="flex gap-4 mt-8 transition-all duration-1000 delay-500 ease-out"
+          style={{
+            opacity: visible ? 1 : 0,
+            transform: visible ? "translateY(0)" : "translateY(20px)",
+          }}
+        >
           <a
-            href="#"
-            className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-white/10 transition-colors"
+            href="https://instagram.com/r7zvan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-white/10 hover:border-accent/30 transition-all duration-300"
             aria-label="Instagram"
           >
             <InstagramIcon />
           </a>
           <a
-            href="#"
-            className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-white/10 transition-colors"
+            href="https://discord.com/users/s8ut"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-white/10 hover:border-accent/30 transition-all duration-300"
             aria-label="Discord"
           >
             <DiscordIcon />
