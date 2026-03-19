@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 const navLinks = [
-  { label: "Home", href: "#hero", active: true },
-  { label: "About", href: "#about", active: false },
-  { label: "Portfolio", href: "#projects", active: false },
-  { label: "Contact", href: "#contact", active: false },
+  { label: "Home", href: "#hero" },
+  { label: "About", href: "#about" },
+  { label: "Portfolio", href: "#projects" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 inset-x-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/5">
-      <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
+      <div className="w-full px-6 md:px-12 lg:px-20 h-14 flex items-center justify-between">
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2">
           <svg
@@ -35,7 +35,7 @@ export default function Navbar() {
               opacity="0.6"
             />
           </svg>
-          <span className="text-white font-semibold text-sm tracking-wide">
+          <span className="text-white font-medium text-sm tracking-wide">
             Toseina
           </span>
         </a>
@@ -46,11 +46,7 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className={`text-sm transition-colors ${
-                link.active
-                  ? "text-white underline underline-offset-4 decoration-1"
-                  : "text-gray-400 hover:text-white"
-              }`}
+              className="text-sm text-gray-400 hover:text-white transition-colors duration-300 tracking-wide font-light"
             >
               {link.label}
             </a>
@@ -60,7 +56,7 @@ export default function Navbar() {
         {/* CTA button */}
         <a
           href="#contact"
-          className="hidden sm:inline-flex rounded-full bg-accent text-black px-5 py-1.5 text-xs font-medium hover:bg-accent-dark transition-colors"
+          className="hidden sm:inline-flex rounded-full bg-accent text-black px-5 py-1.5 text-xs font-medium hover:bg-accent-dark transition-colors duration-300 tracking-wide"
         >
           Get in touch
         </a>
@@ -99,9 +95,7 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className={`text-sm py-1 ${
-                link.active ? "text-white" : "text-gray-400"
-              }`}
+              className="text-sm py-1 text-gray-400 hover:text-white transition-colors font-light tracking-wide"
             >
               {link.label}
             </a>
@@ -109,7 +103,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setMobileOpen(false)}
-            className="rounded-full bg-accent text-black px-5 py-2 text-xs font-medium text-center mt-2"
+            className="rounded-full bg-accent text-black px-5 py-2 text-xs font-medium text-center mt-2 tracking-wide"
           >
             Get in touch
           </a>
