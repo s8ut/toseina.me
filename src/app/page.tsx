@@ -13,7 +13,7 @@ export default function Home() {
         <img
           src="/bg.jpg"
           alt=""
-          className="absolute inset-0 w-full h-full pointer-events-none z-0 object-cover object-center md:object-top"
+          className="absolute inset-0 w-full h-full pointer-events-none z-0 object-contain object-top md:object-cover md:object-top"
         />
         {/* Gradient overlay */}
         <div
