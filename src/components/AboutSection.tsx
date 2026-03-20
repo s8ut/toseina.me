@@ -31,7 +31,7 @@ export default function AboutSection() {
         </AnimateOnScroll>
 
         {/* Right column - skill cards */}
-        <div className="grid grid-cols-2 gap-4 max-w-lg w-full">
+        <div className="grid grid-cols-2 gap-4 max-w-lg w-full mt-8">
           {skills.map((skill, i) => (
             <AnimateOnScroll key={skill.value} delay={i * 80} direction="up">
               <SkillCard value={skill.value} label={skill.label} />
