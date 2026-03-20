@@ -74,6 +74,22 @@ body {
     background 0.4s ease;
 }
 
+/* Animated logo box background */
+.logo-box-bg {
+  background: linear-gradient(135deg, #00e5a0, #00c4d4, #0a0a0a, #00e5a0);
+  background-size: 300% 300%;
+  animation: logo-box-shift 4s ease infinite;
+}
+
+.logo-box-glow {
+  box-shadow: 0 0 10px rgba(0, 229, 160, 0.3), 0 0 20px rgba(0, 229, 160, 0.1);
+}
+
+@keyframes logo-box-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
 .glass-card:hover {
   transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.08);
