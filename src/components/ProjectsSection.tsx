@@ -2,19 +2,19 @@ import AnimateOnScroll from "./AnimateOnScroll";
 
 const projects = [
   {
-    title: "Meridian Branding",
-    category: "Brand Identity",
-    gradient: "from-accent/20 to-teal-900/30",
+    title: "Stray Romania Roleplay Game",
+    tags: ["Brand Identity", "Graphic Design", "UI Design", "UX Design"],
+    image: "/project1.svg",
   },
   {
-    title: "Apex Dashboard",
-    category: "UI Design",
-    gradient: "from-emerald-900/30 to-accent/10",
+    title: "Romania Festival Game",
+    tags: ["Graphic Design", "UI Design", "UX Design"],
+    image: "/project2.svg",
   },
   {
-    title: "Velvet Commerce",
-    category: "UX Design",
-    gradient: "from-teal-800/20 to-accent/15",
+    title: "Theo's Admin",
+    tags: ["Brand Identity", "Graphic Design", "UI Design", "UX Design"],
+    image: "/project3.svg",
   },
 ];
 
@@ -48,30 +48,26 @@ export default function ProjectsSection() {
         {projects.map((project, i) => (
           <AnimateOnScroll key={project.title} delay={i * 120} direction="up">
             <div className="glass-card group relative rounded-2xl overflow-hidden">
-              {/* Placeholder image area */}
-              <div
-                className={`aspect-[4/3] bg-gradient-to-br ${project.gradient} flex items-center justify-center`}
-              >
-                <div className="w-16 h-16 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="text-accent/60"
-                  >
-                    <path
-                      d="M12 2L2 9l10 13L22 9 12 2z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </div>
+              {/* Project image */}
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               {/* Card info */}
               <div className="p-5">
-                <p className="text-xs text-accent font-medium uppercase tracking-widest">
-                  {project.category}
-                </p>
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-[10px] text-accent font-medium uppercase tracking-widest px-2 py-0.5 rounded-full border border-accent/20 bg-accent/5"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
                 <h3 className="text-white font-medium mt-1 group-hover:text-accent transition-colors duration-300 tracking-tight">
                   {project.title}
                 </h3>
