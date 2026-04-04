@@ -3,10 +3,12 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
+import IntroScreen from "@/components/IntroScreen";
 
 export default function Home() {
   return (
     <>
+      <IntroScreen />
       <Navbar />
       <main>
         {/* Section 1 — Hero */}
